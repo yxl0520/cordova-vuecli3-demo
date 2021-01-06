@@ -1,5 +1,16 @@
 # cordova-vue
 
+## 开发环境
+
+本文档书写时，环境搭配为：
+
+```
+1. Android Studio ： v3.6.3
+2. gradle ：v6.4.1
+3. java sdk： v1.8.0_181
+4. cordova v9.0.0
+```
+
 ## Project setup
 ```
 npm install
