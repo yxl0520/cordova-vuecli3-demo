@@ -1,0 +1,217 @@
+/*
+  框架 全局 基础样式
+  ** 可写在这 **
+ */
+
+* {
+    list-style: none;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+*:not(input,textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul,
+li,
+div,
+span,
+em,
+a,
+i {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
+fieldset, img, input, textarea{border:0;}
+address, caption, cite, code, dfn, em, th, var{font-style:normal; font-weight:normal;}
+ol, ul{list-style:none;}
+h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal;}
+html,body{-webkit-user-select:none;-moz-user-select:none;user-select:none}
+
+a:active,
+a:hover {
+    text-decoration: underline;
+}
+
+a,img{-webkit-touch-callout:none}
+img{ width: 100%; vertical-align:middle;}
+
+ol,
+ul {
+    margin: 0;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background: #f3f5f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,button,input,textarea{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  outline:0;
+}
+
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+}
+/* 排列方法 row=从左到右，column=从上到下 */
+/* wrap=换行排列 */
+.flex-flow-r-w {
+    flex-flow: row wrap;
+}
+.flex-flow-c-n {
+    flex-flow: column nowrap;
+}
+.flex-flow-c-w {
+    flex-flow: column wrap;
+}
+.flex-in {
+    display: -webkit-flex;
+    display: inline-flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-wrap-r {
+    flex-wrap: wrap-reverse;
+}
+.flex-l {
+    align-items: flex-start;
+}
+.flex-l-l {
+    justify-content: flex-start;
+}
+.flex-c {
+    align-items: center;
+}
+.flex-c-c {
+    justify-content: center;
+}
+.flex-r {
+    align-items: flex-end;
+}
+.flex-r-r {
+    justify-content: flex-end;
+}
+.flex-item-gsb-1 {
+    flex: 1 1 auto;
+}
+.flex-item-gsb-0 {
+    flex: 0 0 auto;
+}
+/* 元素左对齐布局 */
+.flex-self-l {
+    align-self: flex-start;
+}
+/* 元素中间齐布局 */
+.flex-self-c {
+    align-self: center;
+}
+/* 元素右对齐布局 */
+.flex-self-r {
+    align-self: flex-end;
+}
+/* 子元素换行布局 */
+.flex-dir-column {
+    flex-direction: column;
+}
+
+.add-photo {
+    width: 1.28rem;
+    height: 1.28rem;
+    font-size: 0px;
+    background: url(../images/ic_add-photo@2x.png) no-repeat center/100%;
+}
+
+.pl-li-del {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../images/ic_cancel_selected@2x.png) no-repeat center/80%;
+}
+
+/*  自适应  */
+@media screen and (max-width: 10000px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    html {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    html {
+        font-size: 54.933333px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
