@@ -11,8 +11,34 @@
 4. cordova v9.0.0
 ```
 
+## 项目运行、开发调试说明
+
+1. 进入项目根目录，运行`npm i`安装依赖；
+
+2. 进入cordova文件夹（`cd ./cordova`），再使用cordova命令，进行环境检测、平台安装等。
+
+   ```c
+   # 检测平台构建app的先决条件是否都满足
+   cordova requirements
+   
+   # 添加平台
+   $ cordova platform add android --save
+   # 删除平台
+   $ cordova platform rm android
+   
+   # 添加插件
+   cordova plugin add <plugin-spec> [...]
+   # 移除插件
+   cordova plugin remove [...]
+   ```
+
+3. cordova的调试运行，以安卓平台为例，电脑通过USB连接手机，可以使用`npm run cordova-serve-browser`；
+
+4. 用上一步骤的方式在电脑端进行开发调试，可能会报[processmessage failed: invalid message:""](http://blog.sina.com.cn/s/blog_6297f9d60102x5q9.html)的错误，此时我们可以==另外新建一个cmd窗口==，然后直接使用`npm run serve`，新开一个调试端口，**只要不涉及到cordova调用元素资源相关的插件或功能等，均可以直接在电脑端Chrome进行调试开发**。
+
 ## Project setup
-```
+
+```bash
 npm install
 ```
 
@@ -71,10 +97,11 @@ $ npm run cordova-build-electron # Build Electron
 $ npm run cordova-build-only-www-electron # Build only files to src-cordova
 ```
 
-### Customize configuration
-- See [Configuration Reference](https://cli.vuejs.org/config/).
-- 关于插件[vue-cli-plugin-cordova](https://github.com/m0dch3n/vue-cli-plugin-cordova#vue-cli-plugin-cordova).
-
 ## 关于演示
 
 - 包含相机调用demo：Camera
+
+## More Info
+
+- See [Configuration Reference](https://cli.vuejs.org/config/).
+- 关于插件[vue-cli-plugin-cordova](https://github.com/m0dch3n/vue-cli-plugin-cordova#vue-cli-plugin-cordova).
